@@ -2,11 +2,11 @@
 
 Shrink your qBittorrent downloads folder by magnitudes.
 
-Shrinkarr is a support application for the \*Arr stack, that can automatically delete torrents by size or completion date once a given free space threshold has been reached. Users can limit the categories that Shrinkarr is allowed to touch.
+Shrinkarr is a support tool for the \*Arr stack, that can automatically delete torrents by size or completion date once a given free space threshold has been reached. Users can limit the categories that Shrinkarr is allowed to remove.
 
 ## Motivation
 
-Scripts such as [Prunerr](https://github.com/rpatterson/prunerr) already exist to only remove torrents that have been upgraded in the *Arr apps. However, sometimes the *Arr apps and download client don't share the same disk, in which case you might want a simpler approach of deleting items once a certain free space threshold has been reached.
+Tools such as [Prunerr](https://github.com/rpatterson/prunerr) already exist to only remove torrents that have been upgraded in the *Arr apps. However, sometimes the *Arr apps and download client don't share the same disk, in which case you might want a simpler approach of deleting items once a certain free space threshold has been reached.
 
 ## Running
 
@@ -17,6 +17,9 @@ Shrinkarr can be run with Python, or as a Docker container.
 Simply run the script once with Python, at least 3.10 is required:
 
 ```sh
+# Install dependencies, only needed once
+$ python3 -m pip install -r requirements.txt
+# Run Shrinkarr
 $ python3 -m shrinkarr.main
 ```
 
